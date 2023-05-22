@@ -1,0 +1,57 @@
+
+.hideInPhone{
+  margin-left: 25px;
+}
+
+
+.wrappers {
+  display: flex;
+  overflow: hidden;
+}
+
+
+
+
+  .item {
+    animation: animate 25s reverse linear infinite;
+
+    max-width: 400px;
+    min-width: 250px;
+  }
+  .item img {
+    width: 100%;
+    padding: 20px;
+  }
+  .properWidth{
+    width: 350px !important;
+  }
+  .container:hover .item {
+    animation-play-state: paused;
+  }
+  @keyframes animate {
+    0% {
+      transform: translate3d(400px, 0, 0);
+    }
+    100% {
+      transform: translate3d(-900px, 0, 0);
+    }
+  }
+
+
+@media (max-width: 500px) {
+  .hideInPhone{
+      display: none;
+  }
+
+  }
+
+  @media (max-width: 767px) {
+    .slider-area h2 {
+      font-size: 30px;
+    }
+    .wrappers {
+      width: 95%;
+      border-radius: 0;
+      padding: 0;
+    }
+  }
