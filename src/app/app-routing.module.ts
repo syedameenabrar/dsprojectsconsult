@@ -6,6 +6,7 @@ import { ContactUsComponent } from './component/contact-us/contact-us.component'
 import { AllProjectsComponent } from './projects/all-projects/all-projects.component';
 import { SingleProjectsComponent } from './projects/single-projects/single-projects.component';
 import { AllServicesComponent } from './services/all-services/all-services.component';
+import { SingleServicesComponent } from './services/single-services/single-services.component';
 
 const routes: Routes = [
   {
@@ -33,8 +34,8 @@ const routes: Routes = [
     component: AllServicesComponent
   },
   {
-    path: 'singleServices',
-    component: SingleProjectsComponent
+    path: 'singleServices/:id',
+    component: SingleServicesComponent
   },
   {
     path: '',
