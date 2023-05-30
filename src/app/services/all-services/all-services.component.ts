@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from 'src/app/api/api.service';
 
 @Component({
   selector: 'app-all-services',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./all-services.component.css']
 })
 export class AllServicesComponent implements OnInit {
+  allServices:any = [];
 
-  constructor() { }
+  constructor(private api:ApiService) { }
 
   ngOnInit(): void {
+    this.getAllServices()
+  }
+
+  getAllServices(){
+    this.api.getAllServices().subscribe((res:any) =>{
+      console.log(res)
+      this.allServices = res?.data
+    })
   }
 
 }

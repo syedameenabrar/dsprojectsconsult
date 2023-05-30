@@ -12,6 +12,7 @@ import { AllServicesComponent } from './services/all-services/all-services.compo
 import { SingleServicesComponent } from './services/single-services/single-services.component';
 import { AllProjectsComponent } from './projects/all-projects/all-projects.component';
 import { SingleProjectsComponent } from './projects/single-projects/single-projects.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { SingleProjectsComponent } from './projects/single-projects/single-proje
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
