@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class ApiService {
 
-  constructor(private http:HttpClient) { 
+  constructor(private http:HttpClient) {
 
   }
 
@@ -14,8 +14,20 @@ export class ApiService {
    return this.http.get(`https://ds-project-dev.onrender.com/service`)
   }
 
+  getAllProjects(){
+   return this.http.get(`https://ds-project-dev.onrender.com/product`)
+  }
+
+  getAllServicesList(){
+   return this.http.get(`https://ds-project-dev.onrender.com/category`)
+  }
+
   getSingleService(id:any){
     return this.http.get(`https://ds-project-dev.onrender.com/service/${id}`)
+  }
+
+  getSingleProject(id:any){
+    return this.http.get(`https://ds-project-dev.onrender.com/product/${id}`)
   }
 }
 

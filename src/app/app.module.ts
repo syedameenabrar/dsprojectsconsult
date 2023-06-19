@@ -13,7 +13,9 @@ import { SingleServicesComponent } from './services/single-services/single-servi
 import { AllProjectsComponent } from './projects/all-projects/all-projects.component';
 import { SingleProjectsComponent } from './projects/single-projects/single-projects.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { IvyCarouselModule } from 'angular-responsive-carousel';
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +32,10 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    IvyCarouselModule,
+    BrowserAnimationsModule,
+    NgxSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

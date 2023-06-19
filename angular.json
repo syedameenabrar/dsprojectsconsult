@@ -41,6 +41,7 @@
               "src/assets/css/plugins.css",
               "src/assets/css/responsive.css",
               "src/assets/css/style.css"
+
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js"

@@ -26,7 +26,7 @@ const routes: Routes = [
     component: AllProjectsComponent
   },
   {
-    path: 'singleProjects',
+    path: 'singleProjects/:id',
     component: SingleProjectsComponent
   },
   {
