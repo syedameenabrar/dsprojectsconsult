@@ -24,11 +24,15 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-12 section-space--bottom--40">
-                    <div class="project-image"><img width="1170" height="439" [src]="singleProject?.mainPicture" class="img-fluid" alt=""></div>
+                <div class="col-12 col-md-8 section-space--bottom--40">
+                    <div class="project-image mb-5"><img  [src]="singleProject?.mainPicture" class="img-fluid sizeFit" alt=""></div>
+                    <div class="project-details">
+                      <h2>{{singleProject?.title}}</h2>
+                      <p>{{singleProject?.description}}</p>
+                  </div>
                 </div>
 
-                <div class="col-lg-4 col-12 section-space--bottom--30">
+                <div class="col-12 col-md-4 section-space--bottom--30">
                     <div class="project-information">
                         <h3>Project Information</h3>
                         <ul>
@@ -42,18 +46,18 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-8 col-12 section-space--bottom--30 pl-30 pl-sm-15 pl-xs-15">
+                <!-- <div class="col-lg-8 col-12 section-space--bottom--30 pl-30 pl-sm-15 pl-xs-15">
                     <div class="project-details">
                         <h2>{{singleProject?.title}}</h2>
                         <p>{{singleProject?.description}}</p>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="col-12">
                     <div class="row row-5 image-popup">
 
-                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12 section-space--top--10" *ngFor="let prImg of singleProject?.productPictures">
-                            <a [href]="prImg?.img" class="gallery-item single-gallery-thumb"><img width="476" height="476" [src]="prImg?.img" class="img-fluid" alt=""><span class="plus"></span></a>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-6 section-space--top--10" *ngFor="let prImg of singleProject?.productPictures">
+                            <a [href]="prImg?.img" class="gallery-item single-gallery-thumb"><img [src]="prImg?.img" class="img-fluid sizeFit" alt=""><span class="plus"></span></a>
                         </div>
 
 

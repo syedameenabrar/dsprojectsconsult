@@ -32,7 +32,7 @@
                                     <div class="service-grid-item__image">
                                         <div class="service-grid-item__image-wrapper">
                                             <a href="project-details.html">
-                                                <img width="370" height="237"  [src]="zzz?.mainPicture" class="img-fluid" alt="">
+                                                <img   [src]="zzz?.mainPicture" class="img-fluid sizeFit" alt="">
                                             </a>
                                         </div>
 
@@ -41,7 +41,7 @@
                                         <h3 class="title">
                                             <a href="project-details.html">{{zzz?.title}}</a>
                                         </h3>
-                                        <p class="subtitle">{{zzz?.description}}</p>
+                                        <p class="subtitle">{{zzz?.description | slice:0:69}}...</p>
                                         <a [routerLink]="['/singleProjects',zzz?._id]" class="see-more-link">SEE MORE</a>
                                     </div>
                                 </div>

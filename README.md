@@ -28,3 +28,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 <!-- https://preview.themeforest.net/item/constrk-construction-bootstrap-4-template/full_screen_preview/23685978?_ga=2.251960137.1170107420.1684586843-1387888055.1684586843 -->
+
+
+https://stackblitz.com/edit/angular-route-resolves-avoiding-redunant-api-calls?file=app%2Fapp-routing.module.ts
